@@ -1,0 +1,10 @@
+name: SMPHelper
+version: '1.0'
+main: me.alexliudev.bukkitPlugins.SMPHelper
+api-version: '1.20'
+authors: [ AlexLiuDev233 ]
+website: "https://github.com/AlexLiuDev233/SMPHelper"
+description: "配置文件修改配方&!s切换旁观和生存(本插件原定于某服务器使用，后选择开源)"
+
+depends:
+  - Vault

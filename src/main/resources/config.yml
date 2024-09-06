@@ -1,0 +1,40 @@
+Spectator_Module_Switch_Permission_Group: "specPlayers"
+# !s切换为旁观时
+# 应该同时把他切换到哪个权限组?
+
+Recipe:
+  # 配方修改
+
+  embeddedRecipes: true
+  # 是否启用内置配方
+
+  # 合成配方
+  # 声明合成配方的配置文件名
+  craftingRecipes:
+    - namespaced_key: "elytra"
+      # 配方id
+      # 配方命名空间id为smphelper,无法修改
+      result: "ELYTRA"
+      # 对应的物品，需要是org.bukkit.Material enum中的列举项
+      # 非命名空间id
+      # 详见：https://bukkit.windit.net/javadoc/org/bukkit/Material.html
+      firstRow: "abc"
+      # 第一行
+      secondRow: "bdb"
+      # 第二行
+      thirdRow: "b b"
+      # 第三行
+      # 配方遵循原版，空格=空物品栏，其他需自行指定目标
+      ingredients:
+        - id: "a"
+          # 配方中的指代
+          material: "DRAGON_BREATH"
+          # 对应的物品，需要是org.bukkit.Material enum中的列举项
+          # 非命名空间id
+          # 详见：https://bukkit.windit.net/javadoc/org/bukkit/Material.html
+        - id: "b"
+          material: "PHANTOM_MEMBRANE"
+        - id: "c"
+          material: "NETHER_STAR"
+        - id: "d"
+          material: "STICK"
